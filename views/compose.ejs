@@ -1,0 +1,20 @@
+<% include header %>
+<h1>
+    Compose
+</h1>
+<form action="/compose" autocomplete="off" method="post">
+    <div class="form-group"> 
+        <label for="">Title</label>
+        <input type="text"  class="form-control" name="publishTitle">
+        <label for="">Post</label>
+        <textarea name="publishText" class="form-control" id="" cols="30" rows="20"></textarea>
+    </div>
+   
+    <button type="submit" class="btn btn-primary" name="publishButton">
+        Publish
+    </button>
+</form>
+
+
+
+<% include footer %>
