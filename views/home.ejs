@@ -4,8 +4,15 @@
  <p><%= homeStartingContent %></p>
 
  <% posts.forEach(function (item) { %>
-
-    <% console.log(item.title) %>
+    <div>
+        <h1>
+            <%= item.title %> 
+        </h1>
+        <p>
+            <%= item.text.substring(0,100) + " ..." %>   <a href="/posts/<%=item.title%>"> Read more</a>
+        </p>
+    </div>
+    
      
  <% }); %> 
 
